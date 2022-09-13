@@ -6,17 +6,18 @@
 }
 body{
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width:940px;
+    height:1000px;
 }
 header{
     width: auto;
     height: 112px;
-    padding: 20px;
+    padding: 2em 2em 0;
 }
 .logo:hover{
     transition: 1s;
-    transform: scale(1.5);
+    transform: scale(1.2);
+    filter: opacity(0.5);
 }
 .boton_iniciar{
     position: absolute;
@@ -25,15 +26,26 @@ header{
     left: 40%;
     top: 40%;
     border-radius: 30px;
-    border-style:none;
+    box-shadow: 5px 0px 0px black;
 
-    font-size: 40px;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgb(216, 213, 213);
+    cursor:pointer;
+    
+    
+}
+.boton_iniciar:hover{
+    transform: scale(0.95);
+    transition: 0.5s;
+    font-size: 35px;
+    border: 5px solid black;
+    box-shadow: 5px 0px 0px black;    
 }
 .footer{
     width: 100%;
     height: 112px;
     text-align: center;
-    padding-top: 2%;
+    padding: 2em 0 0 0;
     font-size: 14px;
 }
-    
