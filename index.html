@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Juego Ahorcado</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +11,23 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>    
 </head>
 <body>
-    <div id="desaparece" class="botones_inicio">
-        <input class="boton_iniciar" type="submit" value="Iniciar Juego" id="iniciar_juego" onclick="iniciarJuego()">
-    </div>
-    <div id="aparece" class="canvas">
-        <canvas id="Ahorcado" width="1200" height="860"></canvas>
-        <div class="lineas">
-
-        </div>
-    </div>
+    <main class="main">
+        <header>
+            <img class= "logo" src="img/logo.png" alt="Logo de alura">
+        </header>    
+            <section id="desaparece" class="botones_inicio">
+                <input class="boton_iniciar" type="submit" value="Iniciar Juego" id="iniciar_juego" onclick="iniciarJuego()">
+            </section>
+            <section id="aparece" class="canvas">
+                <canvas id="Ahorcado" width="1440" height="800"></canvas>
+                <div class="lineas">
+            
+                </div>
+            </section>   
+    </main>
+    <footer class="footer">
+        <p>&copy Todos los derechos resevados Analia Novoa - 2022</p>
+    </footer>
     <script src="script_game.js"></script>
 </body>
 </html>

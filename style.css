@@ -1,5 +1,39 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'DotGothic16', sans-serif;    
 }
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+}
+header{
+    width: auto;
+    height: 112px;
+    padding: 20px;
+}
+.logo:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
+.boton_iniciar{
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 40%;
+    top: 40%;
+    border-radius: 30px;
+    border-style:none;
+
+    font-size: 40px;
+}
+.footer{
+    width: 100%;
+    height: 112px;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 14px;
+}
+    
