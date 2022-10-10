@@ -46,6 +46,12 @@ canvas {
     border: 5px solid black;
     box-shadow: 5px 0px 0px black;    
 }
+.btn_nuevoJuego{
+    display:none;
+}
+.btn_salir{
+    display: none;
+}
 .footer{
     background-color:antiquewhite;
     width: 100%;
