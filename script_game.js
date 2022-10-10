@@ -14,6 +14,8 @@ function elejirAnimalSecreto(){
 
 function iniciarJuego(){
     document.getElementById("btn-iniciar").style.display = "none";
+    document.getElementById("btn-nuevoJuego").style.display = "block";
+    document.getElementById("btn-salir").style.display = "block";
     elejirAnimalSecreto();
     dibujarAhorcado();
     cantidadErrores();
