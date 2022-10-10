@@ -6,29 +6,33 @@
 }
 body{
     position: relative;
-    width:940px;
-    height:1000px;
+    min-width: 1200px;
+    background-color: antiquewhite;
 }
-header{
-    width: auto;
-    height:auto;
-    padding: 1em 2em 1em;
+.logo{
+    position: absolute;
+    left: 50px;    
+    top: 50px;    
+  }
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.logo:hover{
-    transition: 1s;
-    transform: scale(1.2);
-    filter: opacity(0.5);
+canvas {
+    width: 100%;
+    object-fit: contain;
 }
 .boton_iniciar{
     position: absolute;
-    width: 317px;
-    height: 114px;
-    left: 30%;
-    top: 30%;
+    width: 40vh;
+    height: 12vh;
+    left: 38%;
+    top: 35%;
     border-radius: 30px;
     box-shadow: 5px 0px 0px black;
-
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
     text-shadow: 5px 5px 0px rgb(216, 213, 213);
     cursor:pointer;
@@ -43,9 +47,10 @@ header{
     box-shadow: 5px 0px 0px black;    
 }
 .footer{
+    background-color:antiquewhite;
     width: 100%;
-    height: 112px;
     text-align: center;
-    padding: 2em 0 0 0;
-    font-size: 14px;
+    padding: 1em 0 1em 0;   
+    font-size: 1rem;
+    color: white;
 }
