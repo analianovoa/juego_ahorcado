@@ -18,6 +18,6 @@ function iniciarJuego(){
     document.getElementById("btn-salir").style.display = "block";
     elejirAnimalSecreto();
     dibujarAhorcado();
-    cantidadErrores();
+    //cantidadErrores();
     dibujarGuiones()
 }
