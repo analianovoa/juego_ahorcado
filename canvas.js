@@ -148,3 +148,19 @@ function dibujarAhorcado(){
         contexto.stroke();
         contexto.closePath();
 }  
+
+function dibujarGuiones() {
+   contexto.lineWidth=4
+   contexto.lineCap="round"
+   contexto.lineJoin="round"
+   contexto.strokeStyle = "black"
+   contexto.beginPath()
+    let ancho=700/animalSecreto.length
+    for (let i=0;i<animalSecreto.length;i++){
+     contexto.moveTo(160+(ancho*i),550)
+     contexto.lineTo(210+(ancho*i),550)
+    }
+   contexto.stroke()
+   contexto.closePath()
+  }
+ 
