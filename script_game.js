@@ -17,4 +17,5 @@ function iniciarJuego(){
     elejirAnimalSecreto();
     dibujarAhorcado();
     cantidadErrores();
+    dibujarGuiones()
 }
