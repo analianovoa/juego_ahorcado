@@ -150,17 +150,48 @@ function dibujarAhorcado(){
 }  
 
 function dibujarGuiones() {
-   contexto.lineWidth=4
+   contexto.lineWidth=6
    contexto.lineCap="round"
    contexto.lineJoin="round"
    contexto.strokeStyle = "black"
    contexto.beginPath()
     let ancho=700/animalSecreto.length
     for (let i=0;i<animalSecreto.length;i++){
-     contexto.moveTo(160+(ancho*i),550)
+     contexto.moveTo(170+(ancho*i),550)
      contexto.lineTo(210+(ancho*i),550)
     }
    contexto.stroke()
    contexto.closePath()
   }
  
+function mostrarLetraAcertada(index) {
+    contexto.lineWidth= 4;
+    contexto.font = 'bold 50px Arial';
+    contexto.lineCap="round";
+    contexto.lineJoin="round";
+    contexto.fillStyle="green"
+    contexto.shadowColor = "none";
+    contexto.shadowBlur = 1;
+    contexto.shadowOffsetX = 2;
+    contexto.shadowOffsetY = 2;
+  
+
+       
+    let ancho=700/animalSecreto.length;
+    contexto.fillText(animalSecreto[index],170+(ancho*index),530);
+    contexto.stroke()
+}
+
+function mostrarLetraErronea(letra, errorsLeft) {
+    contexto.lineWidth=4
+    contexto.font = 'bold 40px Arial';
+    contexto.lineCap="round"
+    contexto.lineJoin="round"
+    contexto.fillStyle="red"
+    contexto.shadowColor = "none";
+    contexto.shadowBlur = 5;
+    contexto.shadowOffsetX = 2;
+    contexto.shadowOffsetY = 2;
+
+    contexto.fillText(letra,190+(40*(10-errorsLeft)), 620,40)
+  }
